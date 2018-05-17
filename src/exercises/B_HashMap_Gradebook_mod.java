@@ -7,36 +7,42 @@ public class B_HashMap_Gradebook_mod {
 
     public static void main(String[] args) {
 
-        HashMap<String, Double> students = new HashMap<>();
+
+        HashMap<Integer, String> students = new HashMap<>();
         Scanner in = new Scanner(System.in);
-        String newStudent;
+        int newStudentID;
+        //String newName = null;
 
-        System.out.println("Enter your students (or ENTER to finish):");
+        System.out.println("Enter students ID and Name (or enter '0' to finish):");
 
-        // Get student names and grades
-        do {
+        System.out.print("Student ID: ");
+        newStudentID = in.nextInt();
 
-            System.out.print("Student: ");
-            newStudent = in.nextLine();
+        while (newStudentID > 0) {
 
-            if (!newStudent.equals("")) {
-                System.out.print("ID#: ");
-                Double id_numV = in.nextDouble();
-                students.put(newStudent, id_numV);
 
-                // Read in the newline before looping back
+            if (newStudentID > 0) {
                 in.nextLine();
+                System.out.print("Name: ");
+                String newName = in.nextLine();
+                students.put(newStudentID, newName);
+                //System.out.println("ID# " + newStudentID + " Name: " + newName);
+
+                System.out.print("Student ID: ");
+                newStudentID = in.nextInt();
+
             }
 
-        } while(!newStudent.equals(""));
-        // Print class roster
-        System.out.println("\nClass roster:");
-        double sum = 0.0;
+        } if (newStudentID == \n);
 
-        for (Map.Entry<String, Double> student : students.entrySet()) {
-            System.out.println(student.getKey() + " #" + student.getValue());
-            sum += student.getValue();
+        System.out.println("\nClass roster:");
+
+        for (Map.Entry<Integer, String> student : students.entrySet()) {
+            System.out.println("ID# " + student.getKey() + " Name: " + student.getValue());
+
+
         }
+
 
     }
 

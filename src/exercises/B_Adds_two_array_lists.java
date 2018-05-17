@@ -6,9 +6,7 @@ public class B_Adds_two_array_lists {
 
     public static void main(String[] args) {
                                                 // second Integer isnt needed
-                                                /*
 
-                                                 */
         ArrayList<Integer> first = new ArrayList<Integer>();
         first.add(3);
         first.add(4);
@@ -17,6 +15,8 @@ public class B_Adds_two_array_lists {
         ArrayList<Integer> second = new ArrayList<Integer>();
         second.add(1);
         second.add(6);
+
+
         ArrayList<Integer> result = new ArrayList<Integer>();
 
         int length = second.size();
