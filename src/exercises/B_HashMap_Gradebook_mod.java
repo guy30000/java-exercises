@@ -33,7 +33,7 @@ public class B_HashMap_Gradebook_mod {
 
             }
 
-        } if (newStudentID == \n);
+        } if (newStudentID == 0);
 
         System.out.println("\nClass roster:");
 
