@@ -3,7 +3,7 @@ package org.launchcode.java.demos.java4python;
 import java.util.Objects;
 
 public class BankAccount {
-/*
+
     private int accountId;
     private double balance;
 
@@ -67,5 +67,5 @@ public class BankAccount {
 
         account2.deposit(1000);
         System.out.print(account1);
-    } */
+    }
 }
