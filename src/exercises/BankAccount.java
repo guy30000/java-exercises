@@ -5,7 +5,7 @@ import java.util.Objects;
 public class BankAccount {
 
     private int accountId;
-    private double balance;
+    protected double balance;
 
     public BankAccount(int id, double balance) {
         this.accountId = id;
