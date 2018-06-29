@@ -9,31 +9,31 @@ public class B_HashMap_Gradebook_mod {
 
 
         HashMap<Integer, String> students = new HashMap<>();
-        Scanner in = new Scanner(System.in);
+        Scanner inV = new Scanner(System.in);
         int newStudentID;
         //String newName = null;
 
         System.out.println("Enter students ID and Name (or enter '0' to finish):");
 
         System.out.print("Student ID: ");
-        newStudentID = in.nextInt();
+        newStudentID = inV.nextInt();
 
         while (newStudentID > 0) {
 
 
             if (newStudentID > 0) {
-                in.nextLine();
+                inV.nextLine();
                 System.out.print("Name: ");
-                String newName = in.nextLine();
+                String newName = inV.nextLine();
                 students.put(newStudentID, newName);
                 //System.out.println("ID# " + newStudentID + " Name: " + newName);
 
                 System.out.print("Student ID: ");
-                newStudentID = in.nextInt();
+                newStudentID = inV.nextInt();
 
             }
 
-        } if (newStudentID == 0);
+        } if (newStudentID < 0);
 
         System.out.println("\nClass roster:");
 

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * Created by LaunchCode
- */
+ */ //refer to the bottom of this for more info https://education.launchcode.org/skills-back-end-java/java4python/data-structures-and-collections/
 public class GradebookHashMap {
 
     public static void main(String[] args) {

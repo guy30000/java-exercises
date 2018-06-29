@@ -15,7 +15,7 @@ public class A_Search_Alice_In_Wonderland {
 
         System.out.println("Enter word to search");
         Scanner word_searchV = new Scanner(System.in);
-        String lookUpV = word_searchV.nextLine();
+        String lookUpV = word_searchV.nextLine(); //nextLine waits for next string typed
 
 
         if (alice_lineV.indexOf(lookUpV) != -1) {

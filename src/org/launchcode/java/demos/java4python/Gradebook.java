@@ -10,26 +10,26 @@ public class Gradebook {
 
     public static void main(String[] args) {
 
-        ArrayList<String> students = new ArrayList<>();
+        ArrayList<String> studentsVV = new ArrayList<>();
         ArrayList<Double> grades = new ArrayList<>();
         Scanner in = new Scanner(System.in);
-        String newStudent;
+        String newStudentV;
 
         System.out.println("Enter your students (or ENTER to finish):");
 
         // Get student names
         do {
-            newStudent = in.nextLine();
+            newStudentV = in.nextLine();
 
-            if (!newStudent.equals("")) {
-                students.add(newStudent);
+            if (!newStudentV.equals("")) {
+                studentsVV.add(newStudentV);
             }
 
-        } while(!newStudent.equals(""));
+        } while(!newStudentV.equals(""));
 
         // Get student grades
-        for (String student : students) {
-            System.out.print("Grade for " + student + ": ");
+        for (String studentV : studentsVV) {
+            System.out.print("Grade for " + studentV + ": ");
             Double grade = in.nextDouble();
             grades.add(grade);
         }
@@ -38,13 +38,13 @@ public class Gradebook {
         System.out.println("\nClass roster:");
         double sum = 0.0;
 
-        for (int i = 0; i < students.size(); i++) {
-            System.out.println(students.get(i) + " (" + grades.get(i) + ")");
-            sum += grades.get(i);
+        for (int iV = 0; iV < studentsVV.size(); iV++) {
+            System.out.println(studentsVV.get(iV) + " (" + grades.get(iV) + ")");
+            sum += grades.get(iV);
         }
 
-        double avg = sum / students.size();
-        System.out.println("Average grade: " + avg);
+        double avgV = sum / studentsVV.size();
+        System.out.println("Average grade: " + avgV);
     }
 
 }
