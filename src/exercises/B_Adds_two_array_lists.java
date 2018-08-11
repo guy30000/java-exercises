@@ -15,6 +15,8 @@ public class B_Adds_two_array_lists {
         ArrayList<Integer> second = new ArrayList<Integer>();
         second.add(1);
         second.add(6);
+        second.add(3);
+
 
 
         ArrayList<Integer> result = new ArrayList<Integer>();
