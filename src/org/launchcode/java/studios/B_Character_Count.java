@@ -1,5 +1,8 @@
 package org.launchcode.java.studios;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
 public class B_Character_Count {
 
 
@@ -27,7 +30,7 @@ public class B_Character_Count {
 
 
             for(char k : counts.keySet()) {
-                System.out.println(k + ": " + counts.get(k));
+                System.out.println(k + ": " + counts.get(k));  //  This is main print statemet for this app. Commented out for other testing
             }
         }
 

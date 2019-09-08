@@ -13,6 +13,11 @@ public class Practice {
 
     public Practice (double balance){
 
+
+        int test = 37;
+        Math.round(test);
+        System.out.println(test);
+
     }
 
 
