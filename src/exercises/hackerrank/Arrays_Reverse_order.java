@@ -2,6 +2,7 @@ package exercises.hackerrank;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Arrays_Reverse_order {
@@ -13,6 +14,8 @@ public class Arrays_Reverse_order {
         for (int i=listThingy.size()-1; i>=0;i--){
             System.out.print(listThingy.get(i) + " ");
         }
+
+
 
         //end here
         //hacker

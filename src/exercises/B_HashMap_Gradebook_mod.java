@@ -7,7 +7,6 @@ public class B_HashMap_Gradebook_mod {
 
     public static void main(String[] args) {
 
-
         HashMap<Integer, String> students = new HashMap<>();
         Scanner inV = new Scanner(System.in);
         int newStudentID;
