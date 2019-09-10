@@ -11,34 +11,30 @@ public class Java_Arraylist {
         ArrayList<Integer> sList1 = new ArrayList<Integer>();
         ArrayList<Integer> sList2 = new ArrayList<Integer>();
         ArrayList<Integer> sList3 = new ArrayList<Integer>();
-        ArrayList<Integer> sList4 = new ArrayList<Integer>();
         ArrayList<ArrayList<Integer>> gList = new ArrayList<ArrayList<Integer>>();
-        sList.addAll(Arrays.asList(11,12,13,14,15,16));
+        sList.addAll(Arrays.asList(41, 77 ,74 ,22, 44));
         gList.add(sList);
-        sList1.addAll(Arrays.asList(4,8,2,8,8));
+        sList1.addAll(Arrays.asList(12));
         gList.add(sList1);
-        sList2.addAll(Arrays.asList(25,28,25,27,29));
+        sList2.addAll(Arrays.asList(37 ,34 ,36 ,52));
         gList.add(sList2);
-        sList3.addAll(Arrays.asList(30,38,35,36,37));
+        sList3.addAll(Arrays.asList(20, 22, 33));
         gList.add(sList3);
-        sList4.addAll(Arrays.asList(45,46,47,47,49));
-        gList.add(sList4);
 
 
 
         for (int i=0;i< gList.size();i++) {
           //  System.out.println(gList.get(i).get(i));
         }
-
         //System.out.println(gList.get(1).get(4));
-
         try {
-
-            System.out.println(gList.get(1).get(5));
+            System.out.println(gList.get(0).get(0));
+            System.out.println(sList2.get(0));
+            sList2.set(0,34);
+            System.out.println(sList2.get(0));
 
         } catch (RuntimeException e) {
             System.out.println("broken");
-
         }
 
         //https://www.hackerrank.com/challenges/java-arraylist/problem
@@ -60,11 +56,9 @@ public class Java_Arraylist {
 //
 //            // num check start
 //            int numOfChecks = scan.nextInt();
-//            int lCheck = 0;
-//            int nCheck = 0;
 //            for (int i =0;i<numOfChecks;i++){
-//                lCheck = scan.nextInt()-1;
-//                nCheck = scan.nextInt()-1;
+//                int lCheck = scan.nextInt()-1;
+//                int nCheck = scan.nextInt()-1;
 //                try{
 //                    System.out.println(gList.get(lCheck).get(nCheck));
 //                } catch (RuntimeException e){
