@@ -6,9 +6,9 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String title = scanner.nextLine();
-        String author = scanner.nextLine();
-        int price = scanner.nextInt();
+        String title = "Nacho man";
+        String author = "Homer SImpson";
+        int price = 42;
         scanner.close();
 
         Book book = new MyBook(title, author, price);

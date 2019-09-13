@@ -7,6 +7,18 @@ public class Dog extends Animal{
         System.out.println("Created Dog");
     }
 
+    public void eat(){
+        System.out.println("a dog is eating ");  //500 2
+    }
+
+    //public abstract eat();  500 2
+
+
+    public void sleep(){
+        System.out.println("A dog is sleeping");
+    }
+
+
  public void ruff(){
      System.out.println("Sig sats ruff");
  }
