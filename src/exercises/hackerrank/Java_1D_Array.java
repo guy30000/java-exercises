@@ -14,6 +14,7 @@ public class Java_1D_Array {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
+
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             int p = scan.nextInt();

@@ -1,5 +1,7 @@
 package exercises.hackerrank;
 
+import java.util.Scanner;
+
 public class Random {
 
     public static void main(String[] Args) {
@@ -36,8 +38,12 @@ public class Random {
 //                    numNegativeSubarrays++;
 //                }
 
-
-
+//Scanning end of file
+        Scanner scan = new Scanner(System.in);
+        int cnt=0;
+        while(scan.hasNextLine()){
+            System.out.println(++cnt + " " + scan.nextLine());  //learned the ++cnt prints the current value but adds one to it.
+        }
 
 
 
