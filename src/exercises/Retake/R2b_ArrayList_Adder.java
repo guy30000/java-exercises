@@ -43,7 +43,7 @@ public class R2b_ArrayList_Adder {
             ArrayList<Integer> row = combined.get(i);
 
             for (int j = 0; j < row.size(); j++){
-//            System.out.println(row.get(j));
+//            System.out.println(spot.get(j));
             }
         }
         int test = -5;

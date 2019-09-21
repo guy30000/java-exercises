@@ -1,4 +1,4 @@
-package exercises.hackerrank.Exception.Interface.StarWarsInterfacePractice;
+package exercises.hackerrank.Interfaces.StarWarsInterfacePractice;
 
 public interface Character {
     public String base = "character";

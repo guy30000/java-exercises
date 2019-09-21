@@ -5,10 +5,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class Queuey{
+//updated with generics ///link
+
+public class Queuey<D>{
 
     //LinkedList queue = new LinkedList();
-    LinkedList queue;   //notice this initilized below
+    LinkedList<D> queue;   //notice this initilized below
 
     public Queuey(){
         queue = new LinkedList();
@@ -23,16 +25,16 @@ public class Queuey{
         return  queue.size();
     }
 
-    public void enqueue(int n){  //learn about generics
+    public void enqueue(D n){  //learn about generics
         queue.addLast(n);
     }
 
-    public int dequeue(){
-        return (int) queue.remove(0); //10:30 example of casting. changed from .removeFirst()
+    public D dequeue(){
+        return  queue.remove(0); //10:30 example of casting. changed from .removeFirst()
     }
 
-    public int peek(){
-        return(int) queue.get(0);
+    public D peek(){
+        return queue.get(0);
     }
 
     public static void main(String[] args){

@@ -1,6 +1,8 @@
 package exercises.hackerrank;
 
 import java.text.DateFormatSymbols;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -87,25 +89,22 @@ public class Practice {
 //////
 /////////////Currency converter
         Scanner scanner = new Scanner(System.in);
-        double payment = 100.40;
+        double payment = 1000.40;
         //scanner.close();
 /////copy
         // Write your code here.
-
-        //Double convert = NumberFormat.getInstance().format(payment);
-//        NumberFormat usC = NumberFormat.getInstance(Locale.US);
-//        //NumberFormat nf = NumberFormat.getInstance(Locale.IN);
-//        NumberFormat chC = NumberFormat.getInstance(Locale.CHINA);
-//        NumberFormat nfC = NumberFormat.getInstance(Locale.FRANCE);
-
-
+///Currancyt converter. This worked but wasnt accepted by the tester
         Locale usCF = new Locale("en", "US");
         NumberFormat usCFormat = NumberFormat.getCurrencyInstance(usCF);
         String us = usCFormat.format(payment);
 //india
-        Locale inCF = new Locale("en", "US");
-        NumberFormat inCFormat = NumberFormat.getCurrencyInstance(inCF);
-        String india = inCFormat.format(payment);
+        NumberFormat df = NumberFormat.getCurrencyInstance();
+        DecimalFormatSymbols dfs = new DecimalFormatSymbols();
+        dfs.setCurrencySymbol("Rs.");
+        dfs.setGroupingSeparator('.');
+        dfs.setMonetaryDecimalSeparator('.');
+        ((DecimalFormat) df).setDecimalFormatSymbols(dfs);
+        String india = (df.format(payment));
 
 
         Locale chCF = new Locale("zh", "CN");
@@ -121,16 +120,45 @@ public class Practice {
         System.out.println( india + " -In");
         System.out.println( china + " -Ch");
         System.out.println( france + " -NF");
+//This did work
+
+//        Locale indiaLocale = new Locale("en", "IN");
+//
+//        NumberFormat us     = NumberFormat.getCurrencyInstance(Locale.US);
+//        NumberFormat india  = NumberFormat.getCurrencyInstance(indiaLocale);
+//        NumberFormat china  = NumberFormat.getCurrencyInstance(Locale.CHINA);
+//        NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+//
+//        System.out.println("US: "     + us.format(payment));
+//        System.out.println("India: "  + india.format(payment));
+//        System.out.println("China: "  + china.format(payment));
+//        System.out.println("France: " + france.format(payment));
 
 
 
-///////end copy
-//        System.out.println("US: " + us);
-//        System.out.println("India: " + india);
-//        System.out.println("China: " + china);
-//        System.out.println("France: " + france);
+//            Scanner scan = new Scanner(System.in);
+//            int q = scan.nextInt();
+//            while (q-- > 0) {
+//                int n = scan.nextInt();
+//                int leap = scan.nextInt();
+//
+//                int[] game = new int[n];
+//                for (int i = 0; i < n; i++) {
+//                    game[i] = scan.nextInt();
+//                }
+//            }
+//            scan.close();
+
+        Scanner sc=new Scanner(System.in);
+        String A="Hello";
+        String B="Java";
 
 
+        int j= args.length;
+        int k= args.length;
+        int line1 = j+k;
+
+        
 
 
 
