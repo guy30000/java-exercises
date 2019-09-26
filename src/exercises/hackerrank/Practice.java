@@ -149,14 +149,10 @@ public class Practice {
 //            }
 //            scan.close();
 
-        Scanner sc=new Scanner(System.in);
-        String A="Hello";
-        String B="Java";
+/// Fun sith strings. Fisrt character to upper case. Puling first character and comparing them
 
 
-        int j= args.length;
-        int k= args.length;
-        int line1 = j+k;
+///sees Greatest substring Lexicon
 
         
 
