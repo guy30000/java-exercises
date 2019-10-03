@@ -1,10 +1,18 @@
 package exercises.hackerrank.Regex.Regex_IP_Test;
 
+import java.util.regex.Pattern;
+
 class MyRegex {
+    public String pattern = "^([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5]).([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5]).([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5]).([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])$";
 
-    public String pattern =" 192.168.0.2";
-    //System.out.println(pattern);
 
+
+//    alternative
+//        String pattern =
+//                "^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
+//                        "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
+//                        "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
+//                        "([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
 
 
 

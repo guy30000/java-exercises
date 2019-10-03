@@ -19,10 +19,13 @@ public class test {
 //        System.out.println(Pattern.matches("[789][0-9]{9}", "6953038949"));//false (starts from 6)
 //        System.out.println(Pattern.matches("[789][0-9]{9}", "8853038949"));//true
 
-        System.out.println(Pattern.matches("[0-255]{0,3}.[0-255]{0,3}.[0-255]{0,3}.[0-255]{0,3}", "021.255.255.255")); //<<<<
+        System.out.println(Pattern.matches("[0-255]{0,3}.[0-255]{0,3}.[0-255]{0,3}.[0-255]{0,3}", "055.255.255.255")); //<<<<
         //System.out.println(Pattern.matches("[0-255]{3}.[0-255]{3}.[0-255]{3}.[0-255]{3}", pattern2));
-
         //System.out.println(Pattern.matches("^(2[0-4]|1[0-9]|[1-9])$", "25"));  //24 hours
+        System.out.println(Pattern.matches("[0-9]{0,3}|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]", "125"));
+        //System.out.println(Pattern.matches("^([01][0-9][0-9]|2[0-4][0-9]|25[0-5])$", "001")); //000..255:
+
+
 
 
         //System.out.println(Pattern.matches("^25[0-5]$", "215"));
