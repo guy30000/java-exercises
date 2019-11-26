@@ -1,8 +1,11 @@
 package exercises.hackerrank;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Java_2D_Array {
+    Scanner scan = new Scanner(System.in);
+    BigInteger intOne = new BigInteger(scan.nextLine());
 //This will not function. This is just an illistration of pulling doule arrays out
 
 //    private static final Scanner scanner = new Scanner(System.in);
