@@ -4,7 +4,7 @@ import java.math.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
-//This one was fun because I figured it out but had to change it to save time. Had to refactor to better efficiency 
+//This one was fun because I figured it out but had to change it to save time. Had to refactor to better efficiency
 
 public class Electronics_Shop {
 
@@ -16,23 +16,18 @@ public class Electronics_Shop {
         int[] totals = new int[drives.length * keyboards.length];
         int price = -1;
         int totPosition = 0;
-        int tempPrice = 0;
-
 
         for (int k=0;k<keyboards.length;k++){
             for (int d =  0;d<drives.length;d++){
                 totals[totPosition]=(keyboards[k]+drives[d]);
-                System.out.println("test pos" + totPosition +" $"+ totals[totPosition]);
-                if (b-totals[totPosition]==0){ System.out.println("bail "+b); return b;}
-                if (b-totals[totPosition]>0 && b-totals[totPosition]<b-tempPrice){
-                    System.out.println("testB");
-                    tempPrice=totals[totPosition];
-                    price=totals[totPosition];
-                }
+                if (b-totals[totPosition]==0) return b;
+                if (b-totals[totPosition]>0 && b-totals[totPosition]<b-price) price=totals[totPosition];
                 totPosition++;
             }
         }
-
+        System.out.println(price);
+        return price;
+    }
 //        for (int p=0;p<totals.length;p++){
 //            while (tempPriceSet == 0) {
 //                for (int pp = 0; pp < totals.length; pp++) {
@@ -50,10 +45,14 @@ public class Electronics_Shop {
 //                price = totals[p];
 //            }
 //        }
-        System.out.println(price);
-        return price;
-    }
+        //above is part of origional code refactored
 
+
+    //below is something to research
+//        from itertools import product  //This to be moved to import while working with it.
+//
+//        def getMoneySpent(keyboards, drives, b):
+//        return max([t for t in map(sum, product(keyboards, drives)) if t <= b] or [-1])
 
 
     private static final Scanner scanner = new Scanner(System.in);
